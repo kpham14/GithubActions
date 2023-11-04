@@ -34,7 +34,7 @@ namespace GithubActionsLab
 
         public void Subtract_Valid_Pham()
         {
-            Assert.AreEqual(2, Program.Subtract("5", "2"));
+            Assert.AreEqual(2, Program.Subtract("5", "3"));
             Assert.AreEqual(1, Program.Subtract("3", "2"));
             Assert.AreEqual(10, Program.Subtract("20", "10"));
         }
