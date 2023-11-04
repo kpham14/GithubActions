@@ -34,9 +34,9 @@ namespace GithubActionsLab
 
         public void Subtract_Valid_Pham()
         {
-            Assert.AreEqual(2, Program.Subtract("5", "3"));
-            Assert.AreEqual(1, Program.Subtract("3", "2"));
-            Assert.AreEqual(10, Program.Subtract("20", "10"));
+            Assert.AreEqual(2, Program.Subtract("4", "2"));
+            Assert.AreEqual(5, Program.Subtract("7", "2"));
+            Assert.AreEqual(12, Program.Subtract("19", "7"));
         }
 
         [Test]
@@ -54,17 +54,18 @@ namespace GithubActionsLab
             Assert.Throws<ArgumentNullException>(() => Program.Subtract(null, "1"));
             Assert.Throws<ArgumentNullException>(() => Program.Subtract(null, null));
         }
-
-        [Test]
+        
+                
+         [Test]
         public void Multiply_Valid_Pham()
         {
-            Assert.AreEqual(15, Program.Multiply("5", "3"));
-            Assert.AreEqual(6, Program.Multiply("3", "2"));
-            Assert.AreEqual(200, Program.Multiply("20", "10"));
+            Assert.AreEqual(8, Program.Multiply("4", "2"));
+            Assert.AreEqual(14, Program.Multiply("7", "2"));
+            Assert.AreEqual(16, Program.Multiply("2", "8"));
         }
 
         [Test]
-        public void Multiply_Invalid_Pham()
+        public void Mulitiply_Invalid_Pham()
         {
             Assert.Throws<FormatException>(() => Program.Multiply("1", "a"));
             Assert.Throws<FormatException>(() => Program.Multiply("a", "1"));
@@ -78,13 +79,14 @@ namespace GithubActionsLab
             Assert.Throws<ArgumentNullException>(() => Program.Multiply(null, "1"));
             Assert.Throws<ArgumentNullException>(() => Program.Multiply(null, null));
         }
-
+        
+        
         [Test]
         public void Divide_Valid_Pham()
         {
-            Assert.AreEqual(5, Program.Divide("5", "1"));
-            Assert.AreEqual(3, Program.Divide("6", "2"));
-            Assert.AreEqual(10, Program.Divide("100", "10"));
+            Assert.AreEqual(2, Program.Divide("4", "2"));
+            Assert.AreEqual(4, Program.Divide("8", "2"));
+            Assert.AreEqual(2, Program.Divide("12", "6"));
         }
 
         [Test]
@@ -102,14 +104,14 @@ namespace GithubActionsLab
             Assert.Throws<ArgumentNullException>(() => Program.Divide(null, "1"));
             Assert.Throws<ArgumentNullException>(() => Program.Divide(null, null));
         }
-
-
+        
+                
         [Test]
         public void Power_Valid_Pham()
         {
-            Assert.AreEqual(25, Program.Power("5", "2"));
-            Assert.AreEqual(36, Program.Power("6", "2"));
-            Assert.AreEqual(100, Program.Power("10", "2"));
+            Assert.AreEqual(16, Program.Power("4", "2"));
+            Assert.AreEqual(64, Program.Power("8", "2"));
+            Assert.AreEqual(4, Program.Power("2", "2"));
         }
 
         [Test]
@@ -127,5 +129,6 @@ namespace GithubActionsLab
             Assert.Throws<ArgumentNullException>(() => Program.Power(null, "1"));
             Assert.Throws<ArgumentNullException>(() => Program.Power(null, null));
         }
+          
     }
 }
