@@ -106,7 +106,7 @@ namespace GithubActionsLab
         }
         
                 
-        [Test]
+        [Test] 
         public void Power_Valid_Pham()
         {
             Assert.AreEqual(16, Program.Power("4", "2"));
